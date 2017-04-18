@@ -15,9 +15,8 @@ public class DotFlipGame
 	private static final char STATE_TWO = '-';
 	private static final int NUMBER_OF_DOTS = 7;
 	
-	String gameSetup;
-	String gameState;
-	int moveCounter;
+	private String gameState;
+	private int moveCounter;
 	
 	public static void main(String[] args)
 	{
@@ -84,7 +83,6 @@ public class DotFlipGame
 	 */
 	private DotFlipGame(String gameSetup, Scanner in)
 	{
-		this.gameSetup = gameSetup;
 		this.in = in;
 		moveCounter = 0;
 		gameState = gameSetup;
